@@ -4,10 +4,13 @@
 \alias{sampleProfile2metdna}
 \title{sampleProfile2metdna}
 \usage{
-sampleProfile2metdna(path = ".", width = 10, height = 6)
+sampleProfile2metdna(path = ".", polarity = c("positive", "negative"),
+  width = 10, height = 6)
 }
 \arguments{
 \item{path}{Absolute directory}
+
+\item{polarity}{polarity}
 
 \item{width}{width, in}
 
