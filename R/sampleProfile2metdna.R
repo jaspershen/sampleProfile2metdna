@@ -4,6 +4,7 @@ path <- "V:/workreport/Shen Xiaotao/demo/metDNA/fly20180712/POS"
 #' @author Xiaotao Shen
 #' \email{shenxt1990@@163.com}
 #' @param path Absolute directory
+#' @param polarity polarity
 #' @param width width, in
 #' @param height height, in
 #' @return A png figure
