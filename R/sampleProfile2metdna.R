@@ -1,4 +1,4 @@
-path <- "V:/workreport/Shen Xiaotao/demo/metDNA/fly20180712/POS"
+# path <- "V:/workreport/Shen Xiaotao/MetDNA demo data/metDNA/fly20180712/POS"
 #' @title sampleProfile2metdna
 #' @description sampleProfile2metdna
 #' @author Xiaotao Shen
