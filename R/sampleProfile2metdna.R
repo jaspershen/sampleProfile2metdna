@@ -33,7 +33,9 @@ sampleProfile2metdna <- function(path = ".",
 
     plot <-  ggplot2::ggplot(data, ggplot2::aes(x = rt, y = mz, colour = int)) +
       ggplot2::geom_point(alpha = 0.5) +
-      ggplot2::scale_color_gradient(low = "royalblue", high = "firebrick1") +
+      # ggplot2::scale_color_gradient2(low = "blue", mid = "white", high = "red") +
+      # modified by zhiwei 20190310
+      ggplot2::scale_color_gradient(low = "dodgerblue", high = "orange") +
       ggplot2::labs(x = "Retention time (RT, second)",
                     y = "Mass to charge ratio (m/z)",
                     colour = "log10(intensity)")+
@@ -62,6 +64,8 @@ sampleProfile2metdna <- function(path = ".",
   }
 
   if(any(file.name == "sample.info.csv")){
+    # modified by Zhiwei 20190310
+    sample.info <- readr::read_csv(file.path(path, "sample.info.csv"))
     return.info <- c(return.info,
                      paste("The samples are classified into ",
                            length(unique(sample.info$group)),
